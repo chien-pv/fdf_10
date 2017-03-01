@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  # load_and_authorize_resource
+  load_and_authorize_resource
 
   def create
     @product = Product.find_by id: comment_params[:product_id]
